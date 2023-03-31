@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>COMP 2132 Project</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="javascripts/data.js" defer></script>
+        <script src="javascripts/functions.js" defer></script>
+        <script src="javascripts/objects.js" defer></script>
+        <script src="javascripts/dice-game.js" defer></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Dice Game</h1>
+            </header>
+            <main>
+                <section>
+                    <article id="about">
+                        <h2>About This Game:</h2>
+                        <ul>
+                            <li>Press the roll button to roll the dice and after 3 rolls the game will end</li>
+                            <li>Press the reset button to reset the game</li>
+                            <li>Two dice will be rolled and tallied into a result for that round</li>
+                            <li>If either dice rolls a 1 the player will have a result of 0 for that round</li>
+                            <li>If the two dice rolls the same number the result will be doubled</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2 id="round">Round: 1</h2>
+                        <div id="dice-game">
+                            <div id="pop-up">
+                                <h2 id="winner">Winner:</h2>
+                            </div>
+                            <div id="player1">
+                                <h3>Player 1</h3>
+                                <div class="dice-pair">
+                                    <img src="images/dice-images/dice_1.jpg" alt="dice" class="dice">
+                                    <img src="images/dice-images/dice_1.jpg" alt="dice" class="dice">
+                                </div>
+                                <div class="player-data">
+                                    <p>Result:</p>
+                                    <p>Score:</p>
+                                </div>
+                            </div>
+                            <button type="button" id="roll">Roll</button>
+                            <button type="button" id="reset">Reset</button>
+                            <div id="player2">
+                                <h3>Player 2</h3>
+                                <div class="dice-pair">
+                                    <img src="images/dice-images/dice_1.jpg" alt="dice" class="dice">
+                                    <img src="images/dice-images/dice_1.jpg" alt="dice" class="dice">
+                                </div>
+                                <div class="player-data">
+                                    <p>Result:</p>
+                                    <p>Score:</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </main>
+            <footer>
+                <p>COMP2132 Project</p>
+                <p>Made By: Elijah Marquez</p>
+                <p>ID: A01030983</p>
+            </footer>
+        </div>
+    </body>
+</html>
